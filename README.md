@@ -1,1 +1,3 @@
 # Project Crescendo Website
+
+The website will be stored in this repo, eventually...
