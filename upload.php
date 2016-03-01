@@ -29,16 +29,7 @@
 
     // Check content is not null
     if (empty($content)) {
-        $response['error'] = 'No MusicXML content.';
-
-        // Set a bad request error
-        header('HTTP/1.0 400 Bad Request');
-
-        // Convert to JSON
-        $json_response = json_encode($response);
-
-        // Respond with json error and exit the program.
-        exit($json_response);
+        send_no_content_error();
 
     }
 

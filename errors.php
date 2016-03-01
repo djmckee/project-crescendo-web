@@ -33,6 +33,7 @@
 
         // End.
         die();
+
     }
 
     // A function to send an error to tell the user that the composition they want doesn't exist, and then quit.
@@ -45,6 +46,24 @@
 
         // End.
         die();
+
+    }
+
+    function send_no_content_error() {
+        $response['error'] = 'No MusicXML content.';
+
+        // Set a bad request error
+        header('HTTP/1.0 400 Bad Request');
+
+        // Convert to JSON
+        $json_response = json_encode($response);
+
+        // Respond with json error and exit the program.
+        exit($json_response);
+
+        // Ensure we don't continue.
+        die();
+
     }
 
 ?>
