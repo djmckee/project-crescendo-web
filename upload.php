@@ -9,7 +9,7 @@
 
         API REFERENCE
         Endpoint: POST upload.php
-        Input: A MusicXML string, set to 'musicxml_content' in the POST request body
+        Input: A MusicXML string, set to 'musicxml_content' in the POST request body, along with a valid client ID and client secret for this API.
         Output: If successful, a JSON object containing a URL and URL component that point to the uploaded composition
 
     */
@@ -24,12 +24,47 @@
     // The upload API returns only JSON
     header('Content-Type: application/json');
 
+    // Check client ID and client secret
+    $client_id = $_POST["client_id"];
+    $client_secret = $_POST["client_secret"];
+
+    $valid_client = TRUE;
+
+    // Check client ID and secret against the constants defined for these values...
+    if ($client_id != CLIENT_ID || $client_secret != CLIENT_SECRET) {
+        $valid_client = FALSE;
+    }
+
+    // If either the client ID or client secret is invalid, fail.
+    if ($valid_client == FALSE) {
+        $response['error'] = 'Unauthorised client.';
+
+        // Set an Unauthorized error
+        header('HTTP/1.0 401 Unauthorized');
+
+        // Convert to JSON
+        $json_response = json_encode($response);
+
+        // Respond with json error and exit the program.
+        exit($json_response);
+
+    }
+
     // Get content from POST variable
     $content = $_POST["musicxml_content"];
 
     // Check content is not null
     if (empty($content)) {
-        send_no_content_error();
+        $response['error'] = 'No MusicXML content.';
+
+        // Set a bad request error
+        header('HTTP/1.0 400 Bad Request');
+
+        // Convert to JSON
+        $json_response = json_encode($response);
+
+        // Respond with json error and exit the program.
+        exit($json_response);
 
     }
 
