@@ -1,18 +1,18 @@
 <?php
-    /*
-        A simple web API to allow MusicXML to be uploaded and stored in a
-        MySQL database; written for PHP5.3 with MySQLi, as part of the
-        Project Crescendo team project app.
-
-        Author: Dylan McKee
-        Date: 28/02/2016
-
-        API REFERENCE
-        Endpoint: POST upload.php
-        Input: A MusicXML string, set to 'musicxml_content' in the POST request body, along with a valid client ID and client secret for this API.
-        Output: If successful, a JSON object containing a URL and URL component that point to the uploaded composition
-
-    */
+    /**
+     *  A simple web API to allow MusicXML to be uploaded and stored in a
+     *  MySQL database; written for PHP5.3 with MySQLi, as part of the
+     *  Project Crescendo team project app.
+     *
+     *  Author: Dylan McKee
+     *  Date: 28/02/2016
+     *
+     *  API REFERENCE
+     *  Endpoint: POST upload.php
+     *  Input: A MusicXML string, set to 'musicxml_content' in the POST request body, along with a valid client ID and client secret for this API.
+     *  Output: If successful, a JSON object containing a URL and URL component that point to the uploaded composition
+     *
+     */
 
     // Import constants so we can access the databse
     require 'constants.php';

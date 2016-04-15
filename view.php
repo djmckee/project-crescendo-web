@@ -1,19 +1,19 @@
 <?php
-    /*
-        A simple web API to allow MusicXML to be retrived and downloaded from a
-        MySQL database; written for PHP5.3 with MySQLi, as part of the
-        Project Crescendo team project app.
-
-        Author: Dylan McKee
-        Date: 28/02/2016
-
-        API REFERENCE
-        Endpoint: GET view.php
-        Input: A GET parameter called 'id', containing the id number of the composition you want to download.
-               (e.g. /view?id=1 - would display a composition with the id of 1)
-        Output: If a composition with that id number exists, then a MusicXML file is downloaded containing the composition.
-                Otherwise, a plaintext error is returned.
-
+    /**
+     *  A simple web API to allow MusicXML to be retrived and downloaded from a
+     *  MySQL database; written for PHP5.3 with MySQLi, as part of the
+     *  Project Crescendo team project app.
+     *
+     *  Author: Dylan McKee
+     *  Date: 28/02/2016
+     *
+     *  API REFERENCE
+     *  Endpoint: GET view.php
+     *  Input: A GET parameter called 'id', containing the id number of the composition you want to download.
+     *          (e.g. /view?id=1 - would display a composition with the id of 1)
+     *  Output: If a composition with that id number exists, then a MusicXML file is downloaded containing the composition.
+     *          Otherwise, a plaintext error is returned.
+     *
     */
 
     // Import constants so we can access the databse
