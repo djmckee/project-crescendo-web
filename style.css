@@ -74,6 +74,8 @@ html, body {
 }
 
 .top_bar {
+    margin-top: 20px;
+    margin-left: 50px;
     width: 100%;
     background-color: #ffffff;
     height: 50px;
@@ -92,6 +94,7 @@ html, body {
 }
 
 .about_section {
+    margin-left: 50px;
     width: 75%;
     height: 300px;
     float: left;

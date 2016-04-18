@@ -16,5 +16,5 @@ function cycleImages(){
 }
 
 $(document).ready(function(){
-    setInterval('cycleImages()', 5500);
+    setInterval(cycleImages(), 5500);
 });
