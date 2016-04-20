@@ -14,22 +14,22 @@
     /**
      * The MySQL Database Host Address
      */
-    define("DATABASE_HOST", "homepages.cs.ncl.ac.uk");
+    define("DATABASE_HOST", "localhost");
 
     /**
      * The MySQL Database name
      */
-    define("DATABASE_NAME", "***REMOVED***");
+    define("DATABASE_NAME", "crescendo");
 
     /**
      * The MySQL Database Username
      */
-    define("DATABASE_USER", "***REMOVED***");
+    define("DATABASE_USER", "SUPER_SECRET_USERNAME_HERE");
 
     /**
      * The super secret MySQL Database Password
      */
-    define("DATABASE_PASSWORD", "***REMOVED***");
+    define("DATABASE_PASSWORD", "SUPER_SECRET_PASSWORD_HERE");
 
     /**
      * The client ID - this value must be sent by the client when interacting
