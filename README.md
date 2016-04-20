@@ -1,4 +1,4 @@
-# Project Crescendo Website
+# Project Crescendo Website & Server-side API
 ----
 
 This repository holds the website and server-side web API for the Project Crescendo upload system.
@@ -18,7 +18,7 @@ The website and API are hosted live over HTTPS at [https://sonata.ml](https://so
 
 Deployment and Ops
 ----
-The website is hosted on a standard [_LAMP Stack_](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), consisting of Ubuntu Linux, Apache web server, MySQL DBMS and PHP 5.5. The website is served over HTTPS (via an SSL Certificate from [Let's Encrypt](https://letsencrypt.org/) to ensure a good level of security and privacy for our users.
+The website is hosted on a standard [_LAMP Stack_](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), consisting of Ubuntu Linux, Apache web server, MySQL DBMS and PHP 5.5. The website  is served over HTTPS (via an SSL Certificate from [Let's Encrypt](https://letsencrypt.org/) to ensure a good level of security and privacy for our users.
 
 Code Style
 ----
