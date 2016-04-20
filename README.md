@@ -18,7 +18,7 @@ The website and API are hosted live over HTTPS at [https://sonata.ml](https://so
 
 Deployment and Ops
 ----
-The website is hosted on a standard _LAMP_ Stack, consisting of Ubuntu Linux, Apache web server, MySQL DBMS and PHP 5.5. The website is served over HTTPS (via an SSL Certificate from [Let's Encrypt](https://letsencrypt.org/) to ensure a good level of security and privacy for our users.
+The website is hosted on a standard [_LAMP Stack_](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), consisting of Ubuntu Linux, Apache web server, MySQL DBMS and PHP 5.5. The website is served over HTTPS (via an SSL Certificate from [Let's Encrypt](https://letsencrypt.org/) to ensure a good level of security and privacy for our users.
 
 Code Style
 ----
@@ -40,8 +40,8 @@ Requirements
 - MySQL 5.5
 - Apache 2.4
 - Ubuntu Server 14.04
-- Valid SSL Certificate for encryption of the connection
-- An active internet connection to source the remotely hosted CDN-delivered jQuery library
+- [Valid SSL Certificate](https://letsencrypt.org/) for encryption of the connection
+- An active internet connection to source the [remotely hosted CDN-delivered jQuery library](https://developers.google.com/speed/libraries/#libraries)
 
 Instructions
 ----
