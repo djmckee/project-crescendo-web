@@ -60,13 +60,14 @@ html, body {
     height: 30px;
     float: bottom;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .footer p {
     color: black;
     vertical-align: middle;
-    font-family: Arial;
-    font-size: 70%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
 .footer p span {
@@ -99,7 +100,9 @@ html, body {
     height: 300px;
     float: left;
     margin-top: 40px;
-    font-family: Arial;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2.4em;
+    font-weight: lighter;
 }
 
 .about_section .qa_span{
