@@ -5,6 +5,7 @@
  * Created by Craig Hirst on 18/04/2016.
  */
 
+
 function cycleImages(){
     var $active = $('#image_holder .active');
     var $next = ($active.next().length > 0) ? $active.next() : $('#image_holder img:first');
